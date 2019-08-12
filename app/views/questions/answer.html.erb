@@ -1,0 +1,32 @@
+<h1>Stupid Coaching</h1>
+
+<% if @answer[-1] == '?' %>
+      <div class="question">
+        <p><%= @answer %></p>
+        <p>-You</p>
+      </div>
+      <div class="answer">
+        <p><%= 'Silly question, get dressed and go to work!'%></p>
+        <p>-Your coach</p>
+      </div>
+<% elsif @answer == 'I am going to work' %>
+    <div class="question">
+      <p><%= @answer %></p>
+      <p>-You</p>
+    </div>
+    <div class="answer">
+      <p><%= 'Great' %></p>
+      <p>-Your coach</p>
+    </div>
+  <% else %>
+  <div class="question">
+    <p><%= @answer %></p>
+    <p>-You</p>
+  </div>
+  <div class="answer">
+    <p><%= "I don't care, get dressed and go to work!" %></p>
+    <p>-Your coach</p>
+  </div>
+<% end %>
+
+
